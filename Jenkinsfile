@@ -15,7 +15,7 @@ pipeline {
 	stage('Deploy') { 
         steps {
         echo 'Deploying only because of code commit...'
-        echo " deploying to ${params.env} environent"
+        echo " deploying to Sandbox environent"
        
         bat 'mvn package deploy -DmuleDeploy'
       }
